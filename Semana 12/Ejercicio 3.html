@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liquidar factura</title>
+    <!-- link de sitio sweetalert mensajes más elegantes-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <center>
@@ -17,11 +19,11 @@
     saldo= parseInt(prompt("Ingrese saldo de su tarjeta de Transmilenio"));
     if( saldo >= tm )
     {
-        alert("Ingrese a Sistema Transmilenio");
+        swal("Señor usuario","Ingrese a Sistema Transmilenio","success");
     }
     else
     {
-        alert("Recargue tarjeta, SALDO INSUFICIENTE ...");
+        swal("Señor usuario","Recargue tarjeta, SALDO INSUFICIENTE ...","error");
     }
     </script>
     </center>
